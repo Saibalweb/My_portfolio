@@ -1,0 +1,12 @@
+.Btn{
+    margin: 0 10px;
+    background: var(--primar);
+    padding: 10px;
+    color: white;
+    border-radius: 7px;
+    font-size: var(--md);
+    cursor: pointer;
+}
+.Btn:hover{
+   background: var(--background);
+}

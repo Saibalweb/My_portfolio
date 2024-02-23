@@ -1,0 +1,72 @@
+:root {
+  /* color Themes */
+  /* --background: #0e2e43; */
+  --background: #0f172a;
+  --white: #ffffff;
+  --primar: #0db9d5;
+  --hover: #9eadd1;
+  --radial-gradient: linear-gradient(
+    90deg,
+    rgba(19, 30, 50, 1) 0%,
+    rgba(13, 43, 67, 1) 35%,
+    rgba(17, 25, 44, 1) 100%
+  );
+  --linear-gradient: linear-gradient(
+    90deg,
+    rgba(19, 30, 50, 1) 0%,
+    rgba(30, 54, 62, 1) 35%,
+    rgba(17, 25, 44, 1) 100%
+  );
+  /* ----------x----------------- */
+
+  /* fontSize */
+  --xs:8px;
+  --sm: 12px;
+  --md:16px;
+  --lg:20px;
+  --xl:24px;
+  --headin-font:45px;
+}
+
+/* Simple CSS Reset */
+
+/* Apply a consistent box-sizing model to all elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* Optionally, you may reset specific elements further */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+li,
+form,
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--white);
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+body {
+  overflow-x: hidden;
+  background-image: var(--radial-gradient);
+}
