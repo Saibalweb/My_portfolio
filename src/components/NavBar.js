@@ -44,7 +44,7 @@ const NavBar = () => {
         <ul className={[styles.navList]}>
           {navItems.map((navItem) => {
             return (
-              <li key={navItem.name}>
+              <li key={navItem.name} >
                 <a href={`${navItem.link}`} className={styles.navLink}>
                   {navItem.name}
                 </a>
@@ -78,13 +78,13 @@ const NavBar = () => {
               </li>
             );
           })}
+        </ul>
           <img
             src={icons.menu}
             alt="Menu Icon"
             onClick={menuToggleHandler}
             className={styles.menu}
           />
-        </ul>
       </div>
     </nav>
   );
