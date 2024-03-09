@@ -5,9 +5,9 @@ import icons from "../assets/icons";
 const NavBar = () => {
   const menu = useRef();
   const menuToggleHandler = () => {
-    if(menu.current.classList.contains(`${styles.navItemContainerShow}`)){
+    if (menu.current.classList.contains(`${styles.navItemContainerShow}`)) {
       menu.current.classList.remove(`${styles.navItemContainerShow}`);
-    }else{
+    } else {
       menu.current.classList.add(`${styles.navItemContainerShow}`);
     }
   };
@@ -44,7 +44,7 @@ const NavBar = () => {
         <ul className={[styles.navList]}>
           {navItems.map((navItem) => {
             return (
-              <li key={navItem.name} >
+              <li key={navItem.name}>
                 <a href={`${navItem.link}`} className={styles.navLink}>
                   {navItem.name}
                 </a>
@@ -61,7 +61,7 @@ const NavBar = () => {
         {/* <div className={styles.logo}>Logo</div> */}
         <h2 className={styles.navHeading}>Saibal Kole</h2>
       </div>
-      <NavMenuItem/>
+      <NavMenuItem />
       <div className={styles.socialContainer}>
         <ul className={styles.socialList}>
           {socialMedia.map((item) => {
@@ -79,12 +79,12 @@ const NavBar = () => {
             );
           })}
         </ul>
-          <img
-            src={icons.menu}
-            alt="Menu Icon"
-            onClick={menuToggleHandler}
-            className={styles.menu}
-          />
+        <img
+          src={icons.menu}
+          alt="Menu Icon"
+          onClick={menuToggleHandler}
+          className={styles.menu}
+        />
       </div>
     </nav>
   );

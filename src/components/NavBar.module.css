@@ -137,5 +137,15 @@
     margin-left: 150px;
   }
 }
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 350px) {
+  .navBar{
+    padding: 0 8%;
+  }
+  .navHeading {
+    font-size: var(--lg);
+  }
+  .menu{
+    margin-left: 110px;
+  }
+  
 }
