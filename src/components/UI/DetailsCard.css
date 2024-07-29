@@ -1,0 +1,20 @@
+.detalsCard{
+    background-color: var(--background);
+    padding: 40px 30px;
+    /* width: 90%; */
+    border-radius: 10px;
+}
+.detailsIcon{
+    width: 50px;
+    height: 50px;
+    margin: 10px 0;
+}
+.detailsTitle{
+    margin: 10px 0;
+}
+@media only screen and (max-width:768px){
+    .detalsCard{
+    width: 95%;
+    margin: 20px;
+    }
+}

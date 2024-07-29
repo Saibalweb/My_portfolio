@@ -1,0 +1,20 @@
+.skillCard{
+    background-color: var(--background);
+    width: 150px;
+    /* height: 100px; */
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.skillImg{
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+.skillTitle{
+    font-size: var(--lg);
+}
