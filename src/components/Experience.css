@@ -1,0 +1,91 @@
+#experience{
+    padding: 1% 12%;
+}
+.expContainer{
+    background-color: var(--background);
+    padding: 2% 3%;
+    border-radius: 20px;
+}
+.expHeader{
+    font-size: var(--headin-font);
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.expCard{
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    color: var(--white);
+    margin:30px 0;
+}
+
+.expTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.expLogo{
+    width: 40px;
+    height: 40px;
+    margin: 0 20px;
+}
+.expDate{
+    font-size: var(--lg);
+    font-weight: bold;
+}
+.expLoc{
+    font-size: var(--lg);
+}
+.expDetails{
+    padding: 0 2%;
+}
+.expDetails ul li{
+    margin:5px 0;
+    font-size: 18px;
+}
+@media only screen and (max-width:1000px) {
+    .expLogo{
+        width: 30px;
+        height: 30px;
+    }
+    .expTitle h2, h3{
+        font-size: var(--md);
+    }
+    .expDate,.expLoc{
+        font-size: var(--md);
+    }
+}
+@media only screen and (max-width:750px){
+    .expTitle{
+        flex-direction: column;
+        align-items: normal;
+    }
+    .expTitle>div{
+        margin: 10px 20px;
+        font-size: var(--lg);
+    }
+    .expTitle>div h2,h3{
+        font-size: var(--lg);
+    }
+    .expContainer{
+        padding: 2% 5%;
+    }
+
+    .expCard{
+        flex-direction: column;
+        align-items: normal;
+    }
+    .expDuration{
+        margin: 5px 20px;
+    }
+}
+@media only screen and (max-width:450px){
+    .expTitle>div h2,h3{
+        font-size: 18px;
+    }
+    .expDetails ul li{
+        font-size: var(--md);
+    }
+}

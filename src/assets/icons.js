@@ -12,5 +12,6 @@ const icons ={
     frontend: require('./icons/frontend.png'),
     mobileDev: require('./icons/mobileDev.png'),
     backEnd: require('./icons/backEnd.png'),
+    work: require('./icons/work.png'),
 }
 export default icons;

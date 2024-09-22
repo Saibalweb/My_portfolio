@@ -1,6 +1,5 @@
 import React from 'react';
 import "./SkillCard.css";
-import icons from '../../assets/icons';
 
 const SkillCard = ({title,icon}) => {
   return (
