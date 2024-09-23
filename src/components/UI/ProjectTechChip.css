@@ -1,0 +1,29 @@
+.chip{
+    display: flex;
+    align-items: center;
+    background-color: var(--primar);
+    width: 90px;
+    padding: 5px;
+    margin: 10px 10px;
+    border-radius: 20px;
+}
+.chip img{
+    width: 25px;
+}
+.chip p{
+    font-size: var(--md);
+    margin-left: 5px;
+    color: white;
+}
+@media only screen and (max-width:568px) {
+    .chip{
+        width: 70px;
+
+    }
+    .chip img{
+        width: 20px;
+    }
+    .chip p{
+        font-size: var(--sm);
+    }
+}

@@ -10,3 +10,6 @@
 .Btn:hover{
    background: var(--background);
 }
+.Btn:active,.Btn:focus{    
+    background: var(--primar);
+}

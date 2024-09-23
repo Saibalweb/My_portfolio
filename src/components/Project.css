@@ -1,0 +1,17 @@
+#project{
+    margin: 5% 0;
+    padding: 0 14%;
+}
+.projectHeading{
+    text-align: center;
+    font-size: var(--headin-font);
+    margin: 20px 0;
+}
+.moreProj{
+    text-align: center;
+}
+.moreProj a{
+    font-size: var(--lg);
+    color: var(--primar);
+    text-decoration: underline;
+}

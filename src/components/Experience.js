@@ -1,6 +1,7 @@
 import React from "react";
 import "./Experience.css";
 import icons from "../assets/icons";
+import ProjectTechChip from "./UI/ProjectTechChip";
 
 const Experience = () => {
   return (
@@ -28,7 +29,7 @@ const Experience = () => {
             <li>&bull; Got experience with Api Binding for dynamic implementation</li>
             <li>&bull; Had some work and knowledge with Redux and react-native-async-storage for state management</li>
             <li>&bull; </li>
-          </ul>
+          </ul> 
         </div>
       </div>
     </div>
