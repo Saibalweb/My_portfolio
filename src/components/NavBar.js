@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import styles from "./NavBar.module.css";
 import icons from "../assets/icons";
+import { navItems, socialMedia } from "../assets/constant";
 
 const NavBar = () => {
   const menu = useRef();
@@ -11,33 +12,9 @@ const NavBar = () => {
       menu.current.classList.add(`${styles.navItemContainerShow}`);
     }
   };
-
-  const navItems = [
-    { name: "Home", link: "/" },
-    { name: "Skills", link: "/skills" },
-    { name: "Projects", link: "/projects" },
-    { name: "About Me", link: "/about" },
-    { name: "Contact", link: "/contact" },
-  ];
-  const socialMedia = [
-    {
-      name: "Github",
-      icon: icons.github,
-      link: "https://github.com/Saibalweb",
-    },
-    {
-      name: "LinkedIn",
-      icon: icons.linkdin,
-      link: "https://www.linkedin.com/in/saibal-kole-549b41209/",
-    },
-    {
-      name: "twitter",
-      icon: icons.twitter,
-      link: "https://twitter.com/SaibalKole",
-    },
-    // {name:'email',icon:'email', link:''},
-  ];
-
+  const navMenuClickHandler = ()=>{
+    menu.current.classList.remove(`${styles.navItemContainerShow}`);
+  }
   const NavMenuItem = () => {
     return (
       <div className={`${styles.navItemContainer}`} ref={menu}>
@@ -45,7 +22,7 @@ const NavBar = () => {
           {navItems.map((navItem) => {
             return (
               <li key={navItem.name}>
-                <a href={`${navItem.link}`} className={styles.navLink}>
+                <a href={`${navItem.link}`} className={styles.navLink} onClick={navMenuClickHandler}>
                   {navItem.name}
                 </a>
               </li>

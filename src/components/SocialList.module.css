@@ -1,0 +1,30 @@
+.socialList {
+  display: none;
+  background: var(--background);
+  border-radius: 20px;
+  margin-top: 10px;
+}
+.socialLogo {
+  width: 25px;
+}
+@media only screen and (max-width: 750px) {
+  .socialList {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
+    width: 100%;
+  }
+  .socialLink {
+    display: flex;
+  }
+  .socialLogo{
+    width: 30px;
+  }
+  .menu {
+    display: inline;
+    width: 25px;
+    height: 25px;
+    margin-left: 150px;
+  }
+}
