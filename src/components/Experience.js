@@ -17,18 +17,20 @@ const Experience = () => {
             </div>
           </div>
           <div className="expDuration">
-              <div className="expDate">November 2023-July 2024</div>
+              <div className="expDate">November 2023-Aug 2024</div>
               <div className="expLoc">Remote</div>
           </div>
         </div>
         <div className="expDetails">
           <ul>
-            <li>&bull; Worked in Front end team for developing CashMe- a payment solution app mainly developing for Nigeria . </li>
-            <li>&bull; Created many UI of this app with ReactJs and React Native. </li>
-            <li>&bull; Worked with Wix navigation (react native navigation) library for the navigation and work flow of the app . </li>
-            <li>&bull; Got experience with Api Binding for dynamic implementation</li>
-            <li>&bull; Had some work and knowledge with Redux and react-native-async-storage for state management</li>
-            <li>&bull; </li>
+            <li>&bull; Developed and maintained production mobile applications, including CashMe, Calonex, and eParisheva. </li>
+            <li>&bull; Created responsive, user-friendly UIs with React Native, ensuring seamless cross-platform
+            functionality.</li>
+            <li>&bull; Integrated APIs and handled data binding to enhance app functionality and performance. </li>
+            <li>&bull;Implemented OAuth for secure user authentication and authorization.</li>
+            <li>&bull; Added deep linking capabilities for improved app navigation and user experience.</li>
+            <li>&bull; Collaborated with cross-functional teams to troubleshoot and resolve bugs in production apps.</li>
+            <li>&bull; Optimized app performance and ensured compatibility with multiple Android/iOS devices.</li>
           </ul> 
         </div>
       </div>

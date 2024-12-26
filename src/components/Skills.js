@@ -60,9 +60,9 @@ const Skills = () => {
     <div id="skills">
       <h1 className="skillheader">Skills</h1>
       <Carousel responsive={responsive} showDots={isDesktop?false:true} arrows={false}>
-        <DetailsCard/>
-        <DetailsCard/>
-        <DetailsCard/>
+        <DetailsCard title={'Mobile Developement'} icon={icons.mobileDev}/>
+        <DetailsCard title={'WebApp Developement'} icon={icons.frontend}/>
+        <DetailsCard title={'Backend Developement'} icon={icons.backEnd}/>
       </Carousel>
       <div className="skillContainer">
       <Carousel responsive={skillCardBrkPoint} showDots={false} arrows={true} infinite={true} autoPlay={true} autoPlaySpeed={3500}>
@@ -72,6 +72,8 @@ const Skills = () => {
         <SkillCard title={"Mongo Db"} icon={icons.mongo} />
         <SkillCard title={"Express Js"} icon={icons.express} />
         <SkillCard title={"Next Js"} icon={icons.next} />
+        <SkillCard title={"Redux"} icon={icons.redux} />
+        <SkillCard title={"Docker"} icon={icons.docker} />
         <SkillCard title={"Tailwind"} icon={icons.tailwind} />
       </Carousel>
       </div>

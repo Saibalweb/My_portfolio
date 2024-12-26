@@ -13,5 +13,11 @@ const icons ={
     mobileDev: require('./icons/mobileDev.png'),
     backEnd: require('./icons/backEnd.png'),
     work: require('./icons/work.png'),
+    redux: require('./icons/redux.png'),
+    docker: require('./icons/docker.png'),
+    mobileDev: require('./icons/mobile-developement.png'),
+    jwt: require('./icons/jwt.png'),
+    key: require('./icons/key.png'),
+    expo: require('./icons/expo.png'),
 }
 export default icons;

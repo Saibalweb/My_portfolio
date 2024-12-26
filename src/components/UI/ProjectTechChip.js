@@ -2,11 +2,11 @@ import React from 'react';
 import './ProjectTechChip.css';
 import icons from '../../assets/icons';
 
-const ProjectTechChip = () => {
+const ProjectTechChip = ({img,text}) => {
   return (
     <div className='chip'>
-        <img src={icons.mongo}/>
-        <p>React</p>
+        <img src={img}/>
+        <p>{text || "React"}</p>
     </div>
   )
 }

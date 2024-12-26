@@ -3,27 +3,21 @@ import './ProjectCard.css';
 import projectDemo from '../../assets/project_demo.jpg'
 import ProjectTechChip from './ProjectTechChip';
 
-const ProjectCard = () => {
+const ProjectCard = ({id,name,subHeading,image,link,description,techStack}) => {
   return (
-    <div className='projectCard'>
-        <div>
+      <div className='projectCard'>
+        <a href={link} target='_blank'>
             <img src={projectDemo} className='projectDemoImg'/>
-        </div>
+        </a>
         <div className='projectDetails'>
-            <h3>DocRx</h3>
-            <h4>An app for creating prescription for doctors</h4>
+            <h3>{name}</h3>
+            <h4>{subHeading || "An app for creating prescription for doctors"}</h4>
             <div className='projectDes'>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, perferendis. Pariatur, laboriosam magni. Architecto harum aspernatur reiciendis distinctio et repudiandae.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, perferendis. Pariatur, laboriosam magni. Architecto harum aspernatur reiciendis distinctio et repudiandae.</p>
-                <a href="">Show More...</a>
+                <p>{description}</p>
+                <a href={link} target="_blank">Github</a>
             </div>
             <div className='chipContainer'>
-                <ProjectTechChip/>
-                <ProjectTechChip/>
-                <ProjectTechChip/>
-                <ProjectTechChip/>
-                <ProjectTechChip/>
-                <ProjectTechChip/>
+                {techStack.map((item,index)=><ProjectTechChip text={item.name} img={item.icon} key={index}/>)}
             </div>
         </div>
     </div>
