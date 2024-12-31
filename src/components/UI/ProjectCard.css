@@ -24,6 +24,7 @@
 }
 .projectDetails>h3{
     font-size: var(--xl);
+    color: var(--primar);
 }
 .projectDetails>h4{
     font-size: var(--lg);
@@ -31,8 +32,10 @@
 .projectDes{
     margin: 16px 0;
 }
-.projectDetails div>a{
-    color: var(--primar);
+.githubBtnContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
 }
 .chipContainer{
     display: flex;

@@ -1,7 +1,6 @@
 import React from "react";
 import "./Home.css";
 import Btn from "./UI/Btn";
-import myPic from "../assets/saibal_mask_blue_new.png";
 import SocialList from "./SocialList";
 const Home = () => {
   const handleHireMe = () => {
@@ -41,10 +40,10 @@ const Home = () => {
         </div>
         <div className="imageContainer">
           <img
-            src={myPic}
+            src="/assets/saibal_mask_blue_new.webp"
             className="profileImg"
             alt="Profile-img"
-            title="item"
+            title="saibal-kole"
           />
         </div>
       </div>

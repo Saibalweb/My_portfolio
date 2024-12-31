@@ -1,0 +1,27 @@
+.githubLinkBtn{
+    color: var(--white);
+    background-color: transparent;
+    /* width: 30%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px 10px;
+    padding: 10px;
+    border: 1px solid var(--white);
+    border-radius: 20px;
+}
+.githubLinkBtn span{
+    font-size: var(--lg);
+}
+.githubLinkBtn img{
+    width: 20px;
+    margin-right: 5px;
+}
+@media screen and (max-width: 450px) {
+    .githubLinkBtn img{
+        width: 15px;
+    }
+    .githubLinkBtn span{
+        font-size: var(--md);
+    }
+}

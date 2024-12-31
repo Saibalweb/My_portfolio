@@ -10,7 +10,7 @@ const Experience = () => {
       <div className="expContainer">
         <div className="expCard">
           <div className="expTitle">
-            <img src={icons.work} className="expLogo" />
+            <img src={icons.work} className="expLogo" alt="exp-logo" />
             <div>
               <h2>Trigital Technologies Pvt Ltd</h2>
               <h3>FrontEnd Developer Intern</h3>
