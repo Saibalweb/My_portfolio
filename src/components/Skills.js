@@ -69,6 +69,8 @@ const Skills = () => {
 
         <SkillCard title={"Node js"} icon={icons.nodeJs} />
         <SkillCard title={"React js"} icon={icons.react} />
+        <SkillCard title={"ReactNative"} icon={icons.react} />
+        <SkillCard title={"Expo"} icon={icons.expo} />
         <SkillCard title={"Mongo Db"} icon={icons.mongo} />
         <SkillCard title={"Express Js"} icon={icons.express} />
         <SkillCard title={"Next Js"} icon={icons.next} />
