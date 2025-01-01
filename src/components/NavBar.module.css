@@ -94,6 +94,7 @@
   .navItemContainer {
     display: block;
     position: absolute;
+    z-index: 10;
     top: 10vh;
     /* left: 100vw; */
     width: 100%;

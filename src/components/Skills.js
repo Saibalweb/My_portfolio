@@ -65,7 +65,7 @@ const Skills = () => {
         <DetailsCard title={'Backend Developement'} icon={icons.backEnd}/>
       </Carousel>
       <div className="skillContainer">
-      <Carousel responsive={skillCardBrkPoint} showDots={false} arrows={true} infinite={true} autoPlay={true} autoPlaySpeed={3500}>
+      <Carousel responsive={skillCardBrkPoint} showDots={false} arrows={true} infinite={true} autoPlay={true} autoPlaySpeed={1000}>
 
         <SkillCard title={"Node js"} icon={icons.nodeJs} />
         <SkillCard title={"React js"} icon={icons.react} />

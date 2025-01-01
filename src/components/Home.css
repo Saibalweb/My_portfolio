@@ -10,6 +10,8 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    animation: pop-in 1s ease-out forwards;
+
 }
 .heading{
     font-size: var(--headin-font);
@@ -23,6 +25,7 @@
 }
 .profileImg{
     width: 100%;
+    animation: pop-in 1s ease-out forwards;
 }
 .BtnContainer{
     margin: 40px 0;
@@ -50,3 +53,17 @@
         margin: 10% 0;
     }
 }
+@keyframes pop-in {
+    0% {
+      transform: scale(0.5);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
