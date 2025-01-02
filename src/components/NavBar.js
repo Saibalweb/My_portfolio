@@ -44,7 +44,7 @@ const NavBar = () => {
           {socialMedia.map((item) => {
             return (
               <li key={item.name}>
-                <a href={item.link} className={styles.socialLink}>
+                <a href={item.link} className={styles.socialLink} target="_blank">
                   <img
                     src={item.icon}
                     alt={item.name}
