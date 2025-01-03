@@ -13,3 +13,9 @@
 .Btn:active,.Btn:focus{    
     background: var(--primar);
 }
+@media screen and (max-width: 375px) {
+    .Btn{
+    font-size: var(--lg);
+
+    }
+}

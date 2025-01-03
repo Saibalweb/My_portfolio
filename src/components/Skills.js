@@ -5,6 +5,7 @@ import "./Skills.css";
 import SkillCard from "./UI/SkillCard";
 import icons from "../assets/icons";
 import DetailsCard from "./UI/DetailsCard";
+import { skillDetails } from "../Constants/skillsDetails";
 const responsive = {
   superLargeDesktop: {
     // the naming can be any, depends on you.
@@ -59,10 +60,8 @@ const Skills = () => {
   return (
     <div id="skills">
       <h1 className="skillheader">Skills</h1>
-      <Carousel responsive={responsive} showDots={isDesktop?false:true} arrows={false}>
-        <DetailsCard title={'Mobile Developement'} icon={icons.mobileDev}/>
-        <DetailsCard title={'WebApp Developement'} icon={icons.frontend}/>
-        <DetailsCard title={'Backend Developement'} icon={icons.backEnd}/>
+      <Carousel responsive={responsive} showDots={isDesktop?false:true} arrows={false} autoPlay={true}>
+        {skillDetails.map((item)=><DetailsCard title={item.title} icon={item.icon} key={item.id} content={item.content}/>)}
       </Carousel>
       <div className="skillContainer">
       <Carousel responsive={skillCardBrkPoint} showDots={false} arrows={true} infinite={true} autoPlay={true} autoPlaySpeed={1000}>
