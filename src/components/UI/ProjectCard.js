@@ -3,10 +3,17 @@ import './ProjectCard.css';
 import ProjectTechChip from './ProjectTechChip';
 import icons from '../../assets/icons';
 import GithubBtn from './GithubBtn';
+import '../../scrollAnimate.css';
+import { useInView } from 'react-intersection-observer';
 
 const ProjectCard = ({id,name,subHeading,image,link,description,techStack}) => {
+    const { ref, inView } = useInView({
+        threshold: 0.2,
+        triggerOnce:false,
+        initialInView:false,
+      });
   return (
-      <div className='projectCard'>
+      <div className={`projectCard ${inView?'show':'hidden'}`} ref={ref}>
         <a href={link} target='_blank'>
             <img src={image} className='projectDemoImg' alt={`${name}-cover`} loading='lazy'/>
         </a>
@@ -20,7 +27,7 @@ const ProjectCard = ({id,name,subHeading,image,link,description,techStack}) => {
                 </div>
             </div>
             <div className='chipContainer'>
-                {techStack.map((item,index)=><ProjectTechChip text={item.name} img={item.icon} key={index}/>)}
+                {techStack.map((item,index)=><ProjectTechChip text={item.name} img={item.icon} key={index} index={index}/>)}
             </div>
         </div>
     </div>

@@ -1,13 +1,19 @@
 import React from "react";
 import "./Experience.css";
-import icons from "../assets/icons";
-import ProjectTechChip from "./UI/ProjectTechChip";
+import icons from "../assets/icons";;
+import "../../src/scrollAnimate.css";
+import { useInView } from 'react-intersection-observer';
 
 const Experience = () => {
+  const { ref, inView } = useInView({
+    threshold: 0.1,
+    triggerOnce:false,
+    initialInView:false,
+  });
   return (
     <div id="experience">
       <h1 className="expHeader">Experience</h1>
-      <div className="expContainer">
+      <div className={`expContainer ${inView?'show':'hidden'}`} ref={ref}>
         <div className="expCard">
           <div className="expTitle">
             <img src={icons.work} className="expLogo" alt="exp-logo" />
