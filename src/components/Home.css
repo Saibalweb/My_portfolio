@@ -33,7 +33,7 @@
 .skills{
     background-color: white;
 }
-@media only screen and (max-width:700px) {
+@media only screen and (max-width:860px) {
     .home{
         flex-direction: column-reverse;
         align-items: center;
@@ -49,7 +49,7 @@
         justify-content: center;
     }
     .imageContainer{
-        width: 70vw;
+        width: 50vw; /* 70vw or 50vw*/
         margin: 10% 0;
     }
 }

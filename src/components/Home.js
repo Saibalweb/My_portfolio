@@ -48,7 +48,7 @@ const Home = () => {
         </div>
         <div className="imageContainer">
           <img
-            src="/assets/saibal_mask_blue_new.webp"
+            src="/assets/saibal_portrait.webp"
             className="profileImg"
             alt="Profile-img"
             title="saibal-kole"
