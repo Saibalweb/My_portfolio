@@ -7,6 +7,7 @@ import '../../scrollAnimate.css';
 import { useInView } from 'react-intersection-observer';
 
 const ProjectCard = ({id,name,subHeading,image,link,description,techStack}) => {
+    console.log(link)
     const { ref, inView } = useInView({
         threshold: 0.2,
         triggerOnce:false,
@@ -14,7 +15,7 @@ const ProjectCard = ({id,name,subHeading,image,link,description,techStack}) => {
       });
   return (
       <div className={`projectCard ${inView?'show':'hidden'}`} ref={ref}>
-        <a href={link} target='_blank'>
+        <a href={link[0].link} target='_blank'>
             <img src={image} className='projectDemoImg' alt={`${name}-cover`} loading='lazy'/>
         </a>
         <div className='projectDetails'>
