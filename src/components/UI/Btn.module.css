@@ -1,11 +1,12 @@
 .Btn{
     margin: 8px 10px;
-    background: var(--primar);
+    background-image: linear-gradient(90deg, #FF8008 0%, #FFA034 100%);
     padding: 10px;
     color: white;
     border-radius: 7px;
     font-size: var(--xl);
     cursor: pointer;
+    font-weight: 700;
 }
 .Btn:hover{
    background: var(--background);
