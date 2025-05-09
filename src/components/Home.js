@@ -22,7 +22,7 @@ const Home = () => {
     }
   };
   const openPdf = () => {
-    const resumeUrl = "/assets/Saibal_Kole_resume.pdf_new.pdf";
+    const resumeUrl = "/assets/Saibal_Kole_Resume_May10.pdf";
     window.open(resumeUrl, "_blank", "noopener,noreferrer");
   };
   return (

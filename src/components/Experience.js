@@ -23,7 +23,7 @@ const Experience = () => {
             </div>
           </div>
           <div className="expDuration">
-              <div className="expDate">November 2023-Aug 2024</div>
+              <div className="expDate">Dec 2023-Dec 2024</div>
               <div className="expLoc">Remote</div>
           </div>
         </div>
